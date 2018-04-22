@@ -10,7 +10,7 @@
 		<servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
 		<init-param>
 			<param-name>services</param-name>
-			<param-value>sdmd.student.StudentApi</param-value>
+			<param-value>sdmd.student.StudentApi, sdmd.contact.ContactApi</param-value>
 		</init-param>
 	</servlet>
 	<servlet-mapping>

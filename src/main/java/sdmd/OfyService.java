@@ -1,23 +1,22 @@
 package sdmd;
 
-import java.util.Date;
-
 import com.googlecode.objectify.Objectify;
 import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.ObjectifyService;
 
+import sdmd.contact.Contact;
 import sdmd.student.Student;
-
 
 /**
  * Custom Objectify Service that this application should use.
  */
 public class OfyService {
-	
+
 	/**
 	 * This static block ensure the entity registration.
 	 */
 	static {
+		factory().register(Contact.class);
 		factory().register(Student.class);
 	}
 
