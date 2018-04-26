@@ -5,6 +5,7 @@ import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.ObjectifyService;
 
 import sdmd.contact.Contact;
+import sdmd.note.Note;
 import sdmd.student.Student;
 
 /**
@@ -17,6 +18,7 @@ public class OfyService {
 	 */
 	static {
 		factory().register(Contact.class);
+		factory().register(Note.class);
 		factory().register(Student.class);
 	}
 
