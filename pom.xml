@@ -22,7 +22,7 @@
 		<maven.compiler.release>21</maven.compiler.release>
 
 		<appengine.deploy.projectId>city-201617</appengine.deploy.projectId>
-		<appengine.deploy.version>9</appengine.deploy.version>
+		<appengine.deploy.version>10</appengine.deploy.version>
 	</properties>
 
 	<dependencies>
