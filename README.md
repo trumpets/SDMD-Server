@@ -26,13 +26,13 @@ This sample shows you how to deploy a simple "Hello World" application to
 To run the application locally, use the [Maven App Engine
 plugin](https://cloud.google.com/appengine/docs/java/tools/using-maven).
 
-    mvn clean appengine:run
+    mvn clean package appengine:run
 
 View the app at [localhost:8080](http://localhost:8080).
 
 To deploy the app to App Engine, run
 
-    mvn clean appengine:deploy
+    mvn clean package appengine:deploy
 
 After the deploy finishes, you can view your application at
 `https://YOUR_PROJECT.appspot.com`, where `YOUR_PROJECT` is your Google Cloud

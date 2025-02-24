@@ -41,7 +41,7 @@ public class Contact extends PersistableEntity {
 	}
 	
 	public String getWebsafeKey() {
-        return createKey(this.getId()).getString();
+        return createKey(this.getId()).toString();
     }
 
 	public String getFirstName() {
