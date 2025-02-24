@@ -13,9 +13,6 @@ public class ObjectifyWebListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        System.out.println("ivo");
-        // Initialize Objectify Service
-        ObjectifyService.init();
         ObjectifyService.register(Contact.class);
         ObjectifyService.register(Note.class);
         ObjectifyService.register(Student.class);

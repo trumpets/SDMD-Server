@@ -24,7 +24,7 @@
 
 	<filter>
 		<filter-name>ObjectifyFilter</filter-name>
-		<filter-class>com.googlecode.objectify.ObjectifyService$FilterJavax</filter-class>
+		<filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>ObjectifyFilter</filter-name>
