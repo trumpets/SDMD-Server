@@ -4,11 +4,6 @@ import com.googlecode.objectify.Objectify;
 import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.ObjectifyService;
 
-import sdmd.contact.Contact;
-import sdmd.highscore.Highscore;
-import sdmd.note.Note;
-import sdmd.student.Student;
-
 /**
  * Custom Objectify Service that this application should use.
  */
