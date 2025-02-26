@@ -3,14 +3,17 @@
  "-//Oracle Corporation//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd">
 
-<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
-    
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+		 version="6.0">
+
     <servlet>
 		<servlet-name>EndpointsServlet</servlet-name>
 		<servlet-class>com.google.api.server.spi.EndpointsServlet</servlet-class>
 		<init-param>
 			<param-name>services</param-name>
-			<param-value>sdmd.student.StudentApi, sdmd.contact.ContactApi, sdmd.note.NoteApi</param-value>
+			<param-value>sdmd.student.StudentApi, sdmd.contact.ContactApi, sdmd.note.NoteApi, sdmd.highscore.HighscoreApi</param-value>
 		</init-param>
 	</servlet>
 	<servlet-mapping>
@@ -28,7 +31,9 @@
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 
-	
+	<listener>
+		<listener-class>sdmd.ObjectifyWebListener</listener-class>
+	</listener>
 
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
